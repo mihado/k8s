@@ -11,7 +11,8 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: /data/postgres-9-pv
+    # path: /data/postgres-9-pv                   # minikube
+    path: /usr/local/var/k8s-data/postgres-9-pv # docker-for-mac
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
