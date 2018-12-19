@@ -1,11 +1,11 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: postgres-service
+  name: postgres-9-service
 spec:
   type: NodePort
   selector:
-    app: postgres-container
+    app: postgres-9-container
   ports:
     - protocol: TCP
       nodePort: 30432
